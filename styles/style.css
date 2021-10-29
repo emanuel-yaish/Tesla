@@ -1,0 +1,196 @@
+/* Fonts */
+@font-face {
+  font-family: "GothamSSm";
+  src: url("/assets/fonts/GothamSSm-Light_Web.woff2") format("woff2");
+  font-style: lighter;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "GothamSSm";
+  src: url("/assets/fonts/GothamSSm-Book_Web.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "GothamSSm";
+  src: url("/assets/fonts/GothamSSm-Medium_Web.woff2") format("woff2");
+  font-style: medium;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "GothamSSm";
+  src: url("/assets/fonts/GothamSSm-Bold_Web.woff2") format("woff2");
+  font-style: bold;
+  font-weight: 900;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Elements */
+body {
+  font-family: GothamSSm;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+a {
+  font-weight: 900;
+}
+
+/* ID's */
+
+/* Logo */
+.logo {
+  width: 150px;
+  position: fixed;
+  top: 30px;
+  left: 15px;
+}
+
+/* General */
+.page-container {
+  width: 100vh;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+  height: 100vh;
+  width: 100vw;
+}
+
+.regular-paragraph {
+  font-size: 14px;
+  color: #393c41;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.side-nav {
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  font-size: 16px;
+  text-align: center;
+}
+
+.side-nav a {
+  display: inline-block;
+  color: white;
+  font-size: 10px;
+}
+
+/* section-1 Model 3 */
+.section-1 {
+  background-image: url("/assets/img/M3-Hero-LHD-US-D.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.shop-acoount-menu {
+  float: right;
+  margin-right: 50px;
+}
+
+.tesla-products-menu {
+  text-align: center;
+  display: inline-block;
+}
+
+/* section-2 Safety */
+
+.section-2 {
+  overflow: hidden;
+  width: 100vw;
+}
+
+.safety-info-container {
+  max-width: 415px;
+  height: 100vh;
+  float: left;
+}
+
+.car-safty-image {
+  width: calc(100vw - 415px);
+  height: 100vh;
+  background-image: url("/assets/img/model_3_safety_hero.png");
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+/* section-3  Performance*/
+
+.section-3 {
+  background-position: bottom;
+  background-size: cover;
+}
+
+.performens-benefits-container {
+  background-image: url("/assets/img/lhd-performance-hero-desktop.jpg");
+  height: calc(100vh - 250px);
+  background-position: center;
+}
+
+.performance-info-bottom {
+  height: 250px;
+  position: relative;
+}
+.performance-info-container {
+  margin: 0 auto;
+  width: 975px;
+  overflow: auto;
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.performance-info-headrs {
+  width: 340px;
+  display: inline-block;
+}
+
+.performance-info-description {
+  width: 620px;
+  display: inline-block;
+}
+
+.top-nav {
+  padding: 15px;
+  text-align: center;
+}
+
+.buttom6 {
+  width: 600px;
+  float: right;
+}
+
+.buttom3 {
+  width: 600px;
+  float: right;
+}
+
+.speedometer {
+  width: 50px;
+  display: inline-block;
+}
+
+.safety-rating {
+  background-color: #e2e4e4;
+  border-radius: 15px;
+}
