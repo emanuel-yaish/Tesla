@@ -52,17 +52,15 @@ a {
 
 /* Logo */
 .logo {
-  width: 150px;
+  width: 120px;
+  height: 30px;
   position: fixed;
-  top: 30px;
-  left: 15px;
+  top: 20px;
+  left: 45px;
 }
 
 /* General */
-.page-container {
-  width: 100vh;
-}
-
+.page-container,
 .section-1,
 .section-2,
 .section-3 {
@@ -94,9 +92,10 @@ a {
 /* section-1 Model 3 */
 .section-1 {
   background-image: url("/assets/img/M3-Hero-LHD-US-D.jpg");
-  background-position: center;
+  background-position: 50% 35%;
   background-size: cover;
   color: #ffffff;
+  position: relative;
 }
 
 .shop-acoount-menu {
@@ -109,10 +108,36 @@ a {
   display: inline-block;
 }
 
+.main-header {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.car-benefits-container {
+  position: absolute;
+  bottom: 10%;
+  width: 100vw;
+  background-color: blue;
+  text-align: center;
+}
+
+.benefits-list {
+  list-style: none;
+}
+
+.benefits-list-item {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 600;
+}
+
 /* section-2 Safety */
 
 .section-2 {
-  overflow: hidden;
+  overflow: auto;
   width: 100vw;
 }
 
@@ -128,7 +153,7 @@ a {
   background-image: url("/assets/img/model_3_safety_hero.png");
   background-position: center;
   background-size: cover;
-  float: left;
+  float: right;
 }
 
 /* section-3  Performance*/
@@ -171,18 +196,17 @@ a {
 }
 
 .top-nav {
-  padding: 15px;
+  padding: 5px 30px;
   text-align: center;
 }
 
-.buttom6 {
-  width: 600px;
-  float: right;
+.top-nav li {
+  font-size: 126px;
+  display: inline-block;
 }
 
-.buttom3 {
-  width: 600px;
-  float: right;
+.top-nav a {
+  display: inline-block;
 }
 
 .speedometer {
