@@ -198,6 +198,20 @@ a {
   position: relative;
 }
 
+.top-nav {
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.top-nav li {
+  font-size: 126px;
+  display: inline-block;
+}
+
+.top-nav a {
+  display: inline-block;
+}
+
 .shop-acoount-menu {
   float: right;
   margin-right: 25px;
@@ -266,6 +280,16 @@ a {
 .benefit-value {
   font-size: 28px;
   font-weight: 600;
+}
+
+.speedometer {
+  width: 50px;
+  height: 20px;
+  display: inline-block;
+}
+
+.speedometer svg {
+  vertical-align: middle;
 }
 
 .unit {
@@ -496,28 +520,4 @@ a {
 
 .performance-info-description {
   display: inline-block;
-}
-
-.top-nav {
-  padding: 15px 30px;
-  text-align: center;
-}
-
-.top-nav li {
-  font-size: 126px;
-  display: inline-block;
-}
-
-.top-nav a {
-  display: inline-block;
-}
-
-.speedometer {
-  width: 50px;
-  height: 20px;
-  display: inline-block;
-}
-
-.speedometer svg {
-  vertical-align: middle;
 }
