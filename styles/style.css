@@ -37,6 +37,7 @@
 /* Elements */
 body {
   font-family: GothamSSm;
+  overflow-x: hidden;
 }
 h1 {
   font-size: 40px;
@@ -291,13 +292,19 @@ a {
   overflow: auto;
   width: 100vw;
   position: relative;
+  background-color: #f5f5f5;
+}
+
+.safety-rating {
+  width: 100%;
 }
 
 .safety-info-container {
-  max-width: 415px;
+  width: 415px;
   height: 100vh;
-  float: left;
+  display: inline-block;
   padding: 50px;
+  background-color: #ffffff;
 }
 
 .safety-rating {
@@ -345,14 +352,15 @@ a {
 }
 
 .car-safty-image {
-  /* width: calc(100vw - 415px); */
-  width: 78vw;
-  height: 100vh;
+  margin-top: 3vh;
+  width: 67vw;
+  height: 94vh;
+  vertical-align: top;
   background-image: url("/assets/img/model_3_safety_hero.png");
   background-position: center;
   background-size: cover;
-  /* float: right; */
   display: inline-block;
+  position: relative;
 }
 
 .safety-buttons-container {
@@ -360,11 +368,72 @@ a {
   bottom: 5%;
 }
 
-.safety-buttons {
-}
-
 .safety-buttons li {
   display: inline-block;
+}
+
+.car-safry-list {
+  list-style: none;
+}
+
+.black-line {
+  width: 3px;
+  height: 315px;
+  background-color: #000000;
+  display: inline-block;
+}
+
+.indicator {
+  float: left;
+}
+
+.car-safry-indicator {
+  width: 400px;
+}
+.safty-label {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.small-circle {
+  width: 7px;
+  height: 7px;
+  display: block;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 75px;
+  margin: -4px -2px;
+}
+
+.impact-indicator {
+  position: absolute;
+  top: 14vh;
+  left: 24vw;
+}
+
+.rigid-indicator {
+  position: absolute;
+  top: 4vh;
+  left: 41vw;
+}
+
+.rigid-indicator .black-line {
+  height: 180px;
+}
+
+.risk-indicator {
+  position: absolute;
+  bottom: 20vh;
+  left: 44vw;
+}
+
+.risk-indicator .black-line {
+  height: 198px;
+}
+
+.risk-indicator .small-circle {
+  margin: -2px -2px;
 }
 
 /* section-3  Performance*/
@@ -417,7 +486,7 @@ a {
 
 .performance-info-headrs {
   display: inline-block;
-  vertical-align: text-top;
+  vertical-align: top;
   margin-right: 25px;
 }
 
